@@ -1,0 +1,72 @@
+/*new css design*/
+.chart-content1 {
+  display: flex;
+  padding: 0.7em;
+  flex-direction: row;
+  /* background-color: #D1D1D1;
+  color: white;*/
+  border-radius: 3px;
+}
+.chart-content2 h2,
+.chart-content3 h2 {
+  background-color: #b5b5b5;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.chart-content2 h2 {
+  border-bottom: 5px solid hsl(0, 100%, 50%);
+}
+.chart-content3 h2 {
+  text-align: center;
+}
+.chart-content2 {
+  width: 20%;
+  height: 2em;
+  margin-right: 2%;
+}
+.chart-content2 li {
+  list-style: none;
+}
+.chart-content2 a {
+  text-decoration: none;
+  font-size: 16px;
+
+  color: black;
+}
+.chart-content2 a:hover {
+  font-weight: bold;
+  color: hsl(0, 100%, 50%);
+}
+.chart-content3 {
+  width: 100%;
+}
+
+.chart-content2 .total-voters,
+.total-candidates {
+  background-color: #f6f6f6;
+  text-align: center;
+  font-size: 26px;
+  height: auto;
+  justify-content: center;
+  color: #000000;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1022px) {
+  /*candidatepath/Candidates area list css*/
+  .chart-content1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .chart-content2 {
+    height: 4%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+  }
+}

@@ -1,0 +1,28 @@
+@media print{
+
+  #print{
+    display:none;
+    size: auto;
+    margin: 0;
+  }
+  
+  #sort{
+    display:none;
+  }
+  
+  #position{
+    display:none;
+  }
+  
+  #back{
+    display:none;
+  }
+  .dashboardsecretary{
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+
+
+}

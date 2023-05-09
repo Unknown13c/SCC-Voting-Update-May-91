@@ -1,0 +1,78 @@
+.modal-header label {
+	box-sizing: border-box;
+    border-left: 1px solid #dddddd;
+    float: right;
+    line-height: 50px;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+}
+.modal-header label:hover img {
+	opacity: 0.6;
+}
+/* below is optional, it is just an example for the blue button */
+.example-label {
+	box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    background-color: #375d91;
+    color: #f9f9f9;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.example-label:hover {
+	background-color: #3c669f;
+}
+
+/*votingclose area*/
+.body{
+    
+     background-size: cover; width: 100%;
+     background-repeat: no-repeat;
+     filter: brightness(100%);
+}
+.motherVote{
+   
+    padding: 5em;
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    margin: 5em;
+}
+.voteclose{
+    text-align: center;
+    padding: 5em;
+    background-color: #db7272;
+    margin: 10em;
+    border-radius: 5px;
+    color: white;
+
+}
+
+@media screen and (max-width: 1022px){
+
+.motherVote{
+   
+    padding: 2em;
+    margin: 3em;
+}
+.voteclose{
+    padding: 2em;
+    margin: 6em;
+   
+
+}
+
+}
+
+/*votingClose area css design*/
+/*.motherVote{
+   
+    margin: 5em;
+}
+.voteclose{
+    padding: 2em;
+    margin: 3em;
+   
+   
+}*/
