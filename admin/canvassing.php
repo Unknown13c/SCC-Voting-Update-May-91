@@ -46,18 +46,14 @@
 								<option>Treasurer</option>
 								<option>Auditor</option>
 								<option>Mass Media Officer</option>
-								<option>Peace Officer</option>
-								<option>Activity Coordinator</option>		
-								<option>1st year liaison</option>	
-								<option>2nd year liaison</option>	
-								<option>3rd year liaison</option>	
-								<option>4th year liaison</option>	
-													
+								<option>Senator</option>
+							
 							</select>
 
 							&nbsp;
 							&nbsp;
-							<button id ="sort" class = "btn btn-success"><i class="fa fa-sort"></i> Sort
+							<button id ="sort" class = "btn btn-success"><i class="fa fa-sort">
+							</i> Sort
 							</button>
 							<script>
 								
@@ -247,7 +243,7 @@
 										
 										
 										<!-- Peace Officer Area -->				
-										<table class="table table-striped table-bordered table-hover ">
+										<!-- <table class="table table-striped table-bordered table-hover ">
 												<thead>
 
 													<td style = "width:200px;" class = "alert alert">IMAGE</td>
@@ -273,10 +269,10 @@
 												</tbody>
 												
 												
-										</table>	
+										</table>	 -->
 										
 										<!-- Activity Coordinator Area -->				
-										<table class="table table-striped table-bordered table-hover ">
+										<!-- <table class="table table-striped table-bordered table-hover ">
 												<thead>
 
 													<td style = "width:200px;" class = "alert alert">IMAGE</td>
@@ -303,19 +299,19 @@
 												</tbody>
 												
 												
-										</table>	
+										</table>	 -->
 										<!-- 1st year liaison -->
 										<table class="table table-striped table-bordered table-hover ">
 												<thead>
 
 													<td style = "width:200px;" class = "alert alert">IMAGE</td>
-													<td style = "width:600px;"class = "alert alert">LIAISON 1st YEAR</td>
+													<td style = "width:600px;"class = "alert alert">Senator</td>
 													<td style = "width:90px;"class = "alert alert">Total Vote</td>
 												
 												</thead>
 												<?php
 												require '../dbconnector/dbcon.php';
-												$query = $conn->query("SELECT * FROM tbl_candidate WHERE position = 'Liaison 1st year' and status = 'approved'");
+												$query = $conn->query("SELECT * FROM tbl_candidate WHERE position = 'senator' and status = 'approved'");
 												while($fetch = $query->fetch_array())
 												{
 													$id = $fetch['candidate_id'];
@@ -334,7 +330,7 @@
 												
 										</table>	
 										<!-- 2nd year liaison -->
-										<table class="table table-striped table-bordered table-hover ">
+										<!-- <table class="table table-striped table-bordered table-hover ">
 												<thead>
 
 													<td style = "width:200px;" class = "alert alert">IMAGE</td>
@@ -361,9 +357,9 @@
 												</tbody>
 												
 												
-										</table>	
+										</table>	 -->
 													<!-- 3rd year liaison -->
-													<table class="table table-striped table-bordered table-hover ">
+													<!-- <table class="table table-striped table-bordered table-hover ">
 												<thead>
 
 													<td style = "width:200px;" class = "alert alert">IMAGE</td>
@@ -390,10 +386,10 @@
 												</tbody>
 												
 												
-										</table>	
+										</table>	 -->
 
 											<!-- 4th year liaison -->
-											<table class="table table-striped table-bordered table-hover ">
+											<!-- <table class="table table-striped table-bordered table-hover ">
 												<thead>
 
 													<td style = "width:200px;" class = "alert alert">IMAGE</td>
@@ -420,7 +416,7 @@
 												</tbody>
 												
 												
-										</table>
+										</table> -->
 
 									</div>				
 		   					 </div>

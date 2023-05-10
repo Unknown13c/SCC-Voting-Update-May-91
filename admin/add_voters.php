@@ -9,9 +9,8 @@
 			$lastname = $_POST['lastname'];
 			$email = $_POST['email'];
 			$gender = $_POST['gender'];
-			$prog_study = $_POST['prog_study'];
+			$department = $_POST['department'];
 			$year_level = $_POST['year_level'];
-			$date = date("Y-m-d H:i:s");
 			function passFunc($len, $set=""){
 				$gen = "";
 				for($i = 0; $i < $len; $i++){
@@ -27,7 +26,7 @@
 			$query = $conn->query("SELECT * FROM voters WHERE id_number = '$id_number'");
 			$ress = $query->fetch_array();
 			if($ress == 0){
-				$conn->query("INSERT INTO `voters`(`id_number`, `firstname`, `lastname`, `email`, `gender`, `prog_study`, `year_level`, `status`, `date`, `password`, `status1`, `a_status`) VALUES ('$id_number','$firstname','$lastname','$email','$gender','$prog_study','$year_level','Unvoted','$date','$genpass','','Deactivated')");
+				$conn->query("INSERT INTO `voters`(`id_number`, `firstname`, `lastname`, `email`, `gender`, `department`, `year_level`, `status`, `password`, `status1`, `a_status`) VALUES ('$id_number','$firstname','$lastname','$email','$gender','$department','$year_level','Unvoted','$lastname','','Activated')");
 
 				$conn->query("INSERT INTO tbl_activitylogs(username, action) values ('$_SESSION[username]','New voters added')")or die($conn->error);
 				header("Location: voters.php?error=votersAdded");

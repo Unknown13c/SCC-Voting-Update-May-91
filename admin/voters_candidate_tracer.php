@@ -47,7 +47,7 @@
                                         <td><?php echo $row['voters_id'];?></td>
                                         <td><?php echo $row['firstname'];?></td>
                                         <td><?php echo $row['lastname'];?></td>
-                                        <td><?php echo $row['prog_study'];?></td>
+                                        <td><?php echo $row['department'];?></td>
                                         <td><?php echo $row['year_level'];?></td>
                                         </td>
                                     </tr>

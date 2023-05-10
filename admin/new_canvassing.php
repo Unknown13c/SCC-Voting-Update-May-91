@@ -46,12 +46,8 @@
 								<option>Treasurer</option>
 								<option>Auditor</option>
 								<option>Mass Media Officer</option>
-								<option>Peace Officer</option>
-								<option>Activity Coordinator</option>		
-								<option>1st Year Liaison</option>	
-								<option>2nd Year Liaison</option>	
-								<option>3rd Year Liaison</option>	
-								<option>4th Year Liaison</option>	
+								<option>Senator</option>
+								
 													
 							</select>
 

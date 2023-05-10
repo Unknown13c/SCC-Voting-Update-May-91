@@ -32,7 +32,7 @@
 					</div>
 					<div class="form-field">
 					<label>Department</label>
-						<select class = "form-control" id="prog_study" name = "prog_study" placeholder="Select Department" required >
+						<select class = "form-control" id="department" name = "department" placeholder="Select Department" required >
 							<option selected disabled>Select Department</option>
 							<option>BSIT</option>
 							<option>BSBA</option>

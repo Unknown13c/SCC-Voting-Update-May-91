@@ -104,6 +104,9 @@
 			.panel{
 				background-color:#eeeeee;
 			}
+			.panel-body{
+				display:none;
+			}
 
 
    </style>
@@ -196,12 +199,12 @@
 
 	<div class="col-lg-6">                    
                      <div class="panel panel" style="background-color:#54515EFF;">
-                        <div class="panel-heading">
+                        <div class="panel-heading vpresh">
 							<h4 style="float:right; color:white;font-family: system-ui;">Remaining Votes: <span id="vp_count">1</span></h4>
                         	<center><h3 style="color:white; font-weight:bold; letter-spacing:2px;">VICE PRESIDENT</h3></center>
                         </div>
 
-                        <div class="panel-body" style="background-color: #A3A1A6FF;">
+                        <div class="panel-body vpresb" style="background-color: #A3A1A6FF;">
 						<?php
 						 $bool = false;
 							$query = $conn->query("SELECT tbl_candidate.candidate_id, tbl_candidate.platform, tbl_candidate.img, tbl_candidate.position,tbl_partylist.partylist_id, tbl_partylist.party, tbl_candidate.firstname, tbl_candidate.lastname, tbl_candidate.email, tbl_candidate.department, tbl_candidate.year_level, tbl_candidate.gender FROM tbl_candidate INNER JOIN tbl_partylist ON tbl_candidate.partylist_id = tbl_partylist.partylist_id WHERE `position` = 'Vice President' and status = 'approved'") or die(mysqli_errno());
@@ -611,7 +614,7 @@
 
 		<center>
 			<!-- <p>Remaining Votes Left: <em id="count"></em></p> -->
-			<button class="submit_vote" type = "submit" id="submitvote" name="submit" disabled>Submit Ballot</button>
+			<button class="submit_vote" type = "submit" id="submitvote" name="submit" onmouseenter="check2otal(this)"disabled>Submit Ballot</button>
 			
 			</center>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -668,6 +671,7 @@
 						$(".pres:checked").removeAttr("disabled");
 						document.getElementById("p_count").innerHTML = pres-1;
 						total +=1;
+						
 						
 					}
 				else
@@ -746,7 +750,28 @@
 						total -=1;
 					}
 			});
+
+
+			$(".mmo").on("change", function(){ 
+				if($(".mmo:checked"))
+					{
+						var checkboxes = document.querySelectorAll('.mmo');
+						var numSelected = 0;
+							for (var i = 0; i < checkboxes.length; i++) {
+								if (checkboxes[i].checked) {
+									numSelected++;
+								}
+							}
+							var mmovote = mmo-numSelected
+							document.getElementById("mmo_count").innerHTML = mmovote;
+							console.log(mmovote);
 			
+					}
+				
+			});
+			
+			
+
 
 			// SCO Mass Media Officer
 			$(".mmo").on("change", function(){ 
@@ -754,13 +779,33 @@
 					{
 						$(".mmo").attr("disabled", "disabled");
 						$(".mmo:checked").removeAttr("disabled");
-						document.getElementById("mmo_count").innerHTML = mmo-3;
-						total +=1;
-						console.log(total);
+						// document.getElementById("mmo_count").innerHTML = mmo-3;
+						// total +=1;
+						// console.log(total);
 					}
 				else
 					{
 						$(".mmo").removeAttr("disabled");
+						// document.getElementById("mmo_count").innerHTML = mmo;
+						// total -=1;
+					}
+				
+			});
+
+			$(".Sen").on("change", function(){ 
+				if($(".Sen:checked"))
+					{
+						var checkboxes = document.querySelectorAll('.Sen');
+						var numSelected = 0;
+							for (var i = 0; i < checkboxes.length; i++) {
+								if (checkboxes[i].checked) {
+									numSelected++;
+								}
+							}
+							var senvote = sen-numSelected
+							document.getElementById("sen_count").innerHTML = senvote;
+							console.log(senvote);				
+							
 					}
 				
 			});
@@ -784,7 +829,7 @@
 				{
 					$(".Sen").attr("disabled", "disabled");
 					$(".Sen:checked").removeAttr("disabled");
-					document.getElementById("mmo_count").innerHTML = sen-12;
+					document.getElementById("sen_count").innerHTML = sen-12;
 						total +=1;
 					if(!total == 7){
 						document.getElementById("submitvote").disabled = true;
@@ -794,10 +839,26 @@
 				}
 			else
 				{
+				
 					$(".Sen").removeAttr("disabled");
 				}
 			});
 
+			$(document).ready(function() {
+			// Set up the click event listener on the toggle element
+			$('.panel-heading').click(function() {
+				// Check if the clicked element is already open
+				var isOpen = $(this).next('.panel-body').is(':visible');
+				
+				// Close all other open div elements
+				$('.panel-heading').not(this).removeClass('active');
+				$('.panel-body').not(isOpen ? $(this).next('.panel-body') : null).slideUp();
+				
+				// Toggle the clicked element
+				$(this).toggleClass('active');
+				$(this).next('.panel-body').slideToggle();
+			});
+			});
 
 
 			// 1st year
