@@ -121,9 +121,9 @@
                     
                    <div class="panel panel" style="background-color:#54515EFF;">
                         <div class="panel-heading">
-							<h4 style="float:right; color:white;font-family: system-ui;">Vote 1 Candidates</h4>
+							<h4 style="float:right; color:white;font-family: system-ui;">Remaining Votes: <span id="p_count">1</span></h4>
                         	<center><h3 style="color:White; font-weight:bold; letter-spacing:2px;">PRESIDENT</h3></center>
-							
+						
                         </div>
 
 
@@ -151,7 +151,7 @@
 										Platform
 							</b></button>									
 									<button type="button" class="primary ghost">Vote &nbsp;
-										<input  type = "checkbox" value = "<?php echo $fetch['candidate_id'] ?>" id="pres_id" name ="pres_id" class = "pres">
+										<input  type = "checkbox" value = "<?php echo $fetch['candidate_id'] ?>" id="pres_id" name ="pres_id" class ="pres">
 									</button>
 								</div>
 						</div>
@@ -163,14 +163,14 @@
  <!--                           	<div id = "position">
                            	<div class="vice-pre">
                        		<div class="descrip">
-								<img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px; " height = "150px" width = "150px" class = "img">
+								<img src = "admin/< ?php echo $fetch['img']?>" style ="border-radius:6px; " height = "150px" width = "150px" class = "img">
 							</div>
 							
 							<div class="descrip">
-								<?php echo "<strong>Names: </strong>".$fetch['firstname']." ".$fetch['lastname']."<br/><strong>Gender: </strong> ".$fetch['gender']."<br/><strong>Level: </strong> ".$fetch['year_level']."<br/><strong>Department: </strong> ".$fetch['department']."<br/><strong>Party: </strong> ".$fetch['party']?>
+								< ?php echo "<strong>Names: </strong>".$fetch['firstname']." ".$fetch['lastname']."<br/><strong>Gender: </strong> ".$fetch['gender']."<br/><strong>Level: </strong> ".$fetch['year_level']."<br/><strong>Department: </strong> ".$fetch['department']."<br/><strong>Party: </strong> ".$fetch['party']?>
 							<div class="givevote">
-								<input  type = "checkbox" value = "<?php echo $fetch['candidate_id'] ?>" id="pres_id" name ="pres_id" class = "pres"> &nbsp;<span class="vote">Vote <br>
-									<button class="platfromBtn" type="button"  data-toggle="modal" data-target="#candidate_platform<?php echo$fetch['candidate_id']; ?>" id="<?php echo$fetch['candidate_id'];?>"><i class="fa fa-eye"></i>Platform</button>
+								<input  type = "checkbox" value = "< ?php echo $fetch['candidate_id'] ?>" id="pres_id" name ="pres_id" class = "pres"> &nbsp;<span class="vote">Vote <br>
+									<button class="platfromBtn" type="button"  data-toggle="modal" data-target="#candidate_platform< ?php echo$fetch['candidate_id']; ?>" id="<?php echo$fetch['candidate_id'];?>"><i class="fa fa-eye"></i>Platform</button>
 
 
 								</span>
@@ -197,7 +197,7 @@
 	<div class="col-lg-6">                    
                      <div class="panel panel" style="background-color:#54515EFF;">
                         <div class="panel-heading">
-							<h4 style="float:right; color:white;font-family: system-ui;">Vote 1 Candidates</h4>
+							<h4 style="float:right; color:white;font-family: system-ui;">Remaining Votes: <span id="vp_count">1</span></h4>
                         	<center><h3 style="color:white; font-weight:bold; letter-spacing:2px;">VICE PRESIDENT</h3></center>
                         </div>
 
@@ -268,7 +268,7 @@
 		<div class="col-lg-6">                    
             <div class="panel panel" style="background-color:#54515EFF;">
                         <div class="panel-heading">
-							<h4 style="float:right; color:white;font-family: system-ui;">Vote 1 Candidates</h4>
+							<h4 style="float:right; color:white;font-family: system-ui;">Remaining Votes: <span id="sec_count">1</span></h4>
                         	<center><h3 style="color:White; font-weight:bold; letter-spacing:2px;">SECRETARY</h3></center>
                         </div>
 
@@ -339,7 +339,7 @@
 		<div class="col-lg-6">
             <div class="panel panel" style="background-color:#54515EFF;">
                         <div class="panel-heading">
-							<h4 style="float:right; color:white;font-family: system-ui;">Vote 1 Candidates</h4>
+							<h4 style="float:right; color:white;font-family: system-ui;">Remaining Votes: <span id="tre_count">1</span></h4>
                         	<center><h3 style="color:White; font-weight:bold; letter-spacing:2px;">TREASURER</h3></center>
                         </div>
 
@@ -408,7 +408,7 @@
 		<div class="col-lg-6">
              <div class="panel panel" style="background-color:#54515EFF;">
                         <div class="panel-heading">
-							<h4 style="float:right; color:white;font-family: system-ui;">Vote 1 Candidates</h4>
+							<h4 style="float:right; color:white;font-family: system-ui;">Remaining Votes: <span id="aud_count">1</span></h4>
                         	<center><h3 style="color:White; font-weight:bold; letter-spacing:2px;">AUDITOR</h3></center>
                         </div>
 
@@ -476,7 +476,7 @@
 	 	<div class="col-lg-6">
 	 		<div class="panel panel" style="background-color:#54515EFF;">
                         <div class="panel-heading">
-							<h4 style="float:right; color:white; font-family: system-ui;">Vote 3 Candidates</h4>
+							<h4 style="float:right; color:white; font-family: system-ui;">Remaining Votes: <span id="mmo_count">3</span></h4>
                         	<center><h3 style="color:White; font-weight:bold; letter-spacing:2px;">MASS MEDIA OFFICER</h3></center>
                  </div>
                         <div class="panel-body" style="background-color: #A3A1A6FF;">
@@ -545,7 +545,7 @@
 	<div class="col-lg-6">
 	 		<div class="panel panel" style="background-color:#54515EFF;">
                         <div class="panel-heading">
-							<h4 style="float:right; color:white;font-family: system-ui;">Vote 12 Candidates</h4>
+							<h4 style="float:right; color:white;font-family: system-ui;">Remaining Votes: <span id="sen_count">12</span></h4>
                         	<center><h3 style="color:White; font-weight:bold; letter-spacing:2px;">SENATOR</h3></center>
                  </div>
                         <div class="panel-body" style="background-color: #A3A1A6FF;">
@@ -610,8 +610,9 @@
                 </div>
 
 		<center>
-			<p>Remaining Votes Left: <em id="count"></em></p>
+			<!-- <p>Remaining Votes Left: <em id="count"></em></p> -->
 			<button class="submit_vote" type = "submit" id="submitvote" name="submit" disabled>Submit Ballot</button>
+			
 			</center>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</form>
@@ -625,24 +626,55 @@
 <?php include ('script.php');?>
   <script type = "text/javascript">
 
+	var pres = 1;
+	var vpres = 1;
+	var sec = 1;
+	var tre = 1;
+	var aud = 1;
+	var mmo = 3;
+	var sen = 12;
 	var total=0;
+
+
+		// $(document).ready(function(){
+			// 	var $checkboxes = $('#pres_id input[type="checkbox"]');
+				
+			// 	$checkboxes.change(function(){
+			// 		var countCheckedCheckboxes = $checkboxes.filter(':checked').length;
+			// 		console.log(countCheckedCheckboxes);
+
+			// 	});
+
+			// });
+
+
+		
+			// 	$('#pres_id').click(function() {
+			// 		var checkboxes = $('[name="pres_id[]"]:checked').length;
+			// 		if(checkboxes){
+			// 			console.log(pres-1);
+			// 		}else{
+			// 			console.log(pres+1);
+			// 		}
+			// })
+
 		$(document).ready(function(){
 			// SCO President
+			console.log(total);
 			$(".pres").on("change", function(){
 				if($(".pres:checked").length == 1)
 					{
 						$(".pres").attr("disabled", "disabled");
 						$(".pres:checked").removeAttr("disabled");
-						total += 1;
-						document.getElementById("count").innerHTML = 20-total;
-
+						document.getElementById("p_count").innerHTML = pres-1;
+						total +=1;
 						
 					}
 				else
 					{
 						$(".pres").removeAttr("disabled");
-						
-
+						document.getElementById("p_count").innerHTML = pres;
+						total -=1;
 					}
 			});
 
@@ -652,12 +684,14 @@
 					{
 						$(".vpres").attr("disabled", "disabled");
 						$(".vpres:checked").removeAttr("disabled");
-						total += 1;
-						document.getElementById("count").innerHTML = 20-total;
+						document.getElementById("vp_count").innerHTML = vpres-1;
+						total +=1;
 					}
 				else
 					{
 						$(".vpres").removeAttr("disabled");
+						document.getElementById("vp_count").innerHTML = vpres;
+						total -=1;
 					}
 			});
 
@@ -667,12 +701,14 @@
 					{
 						$(".secretary").attr("disabled", "disabled");
 						$(".secretary:checked").removeAttr("disabled");
-						total += 1;
-						document.getElementById("count").innerHTML = 20-total;
+						document.getElementById("sec_count").innerHTML = sec-1;
+						total +=1;
 					}
 				else
 					{
 						$(".secretary").removeAttr("disabled");
+						document.getElementById("sec_count").innerHTML = sec;
+						total -=1;
 					}
 			});
 
@@ -682,12 +718,14 @@
 					{
 						$(".treasurer").attr("disabled", "disabled");
 						$(".treasurer:checked").removeAttr("disabled");
-						total += 1;
-						document.getElementById("count").innerHTML = 20-total;
+						document.getElementById("tre_count").innerHTML = tre-1;
+						total +=1;
 					}
 				else
 					{
 						$(".treasurer").removeAttr("disabled");
+						document.getElementById("tre_count").innerHTML = tre;
+						total -=1;
 					}
 			});
 
@@ -697,24 +735,28 @@
 					{
 						$(".auditor").attr("disabled", "disabled");
 						$(".auditor:checked").removeAttr("disabled");
-						total += 1;
-						document.getElementById("count").innerHTML = 20-total;
+						document.getElementById("aud_count").innerHTML = aud-1;
+						total +=1;
+						
 					}
 				else
 					{
 						$(".auditor").removeAttr("disabled");
+						document.getElementById("aud_count").innerHTML = aud;
+						total -=1;
 					}
 			});
 			
 
 			// SCO Mass Media Officer
-			$(".mmo").on("change", function(){
+			$(".mmo").on("change", function(){ 
 				if($(".mmo:checked").length == 3)
 					{
 						$(".mmo").attr("disabled", "disabled");
 						$(".mmo:checked").removeAttr("disabled");
-						total += 3;
-						document.getElementById("count").innerHTML = 20-total;
+						document.getElementById("mmo_count").innerHTML = mmo-3;
+						total +=1;
+						console.log(total);
 					}
 				else
 					{
@@ -742,12 +784,12 @@
 				{
 					$(".Sen").attr("disabled", "disabled");
 					$(".Sen:checked").removeAttr("disabled");
-					total += 12;
-					document.getElementById("count").innerHTML = 20-total;
-					if(total == 20){
-						document.getElementById("submitvote").disabled = false;
-					}else{
+					document.getElementById("mmo_count").innerHTML = sen-12;
+						total +=1;
+					if(!total == 7){
 						document.getElementById("submitvote").disabled = true;
+					}else{
+						document.getElementById("submitvote").disabled = false;
 					}
 				}
 			else
@@ -755,7 +797,6 @@
 					$(".Sen").removeAttr("disabled");
 				}
 			});
-
 
 
 
